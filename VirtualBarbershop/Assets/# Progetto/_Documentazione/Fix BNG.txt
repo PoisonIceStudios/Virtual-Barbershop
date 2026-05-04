@@ -1,0 +1,46 @@
+Per fixare il funzionamento del mouse cancellare la riga 77 di VRUISystem.cs e sostituirla con:
+
+GameObject.Find("CanvasPausa").GetComponent<Canvas>().worldCamera = cameraCaster;
+
+
+Per fixare il bug della scala cancellare tutti i riferimenti ".scale" dello script "SnapZone.cs"
+
+
+Per far funzionare static batchinbg su istantiate bisogna impostare il cliente come: "Read\Write"
+
+
+Per far funzionare la scatola, bisogna modificare il metodo void di "Grabbable.cs" e cambiare void Awake con void OnEnable.
+
+Aggiungeresu Grabber.cs dopo la riga 2105 il codice: 
+g.HandsGraphics.transform.SetSiblingIndex(0);
+
+
+Aggiungi queste funzioni su Grabber.cs:
+
+void ToggleRenderersAndColliders(Transform parent, bool enable)
+    {
+        // Attiva o disattiva il renderer e il collider dell'oggetto corrente, se presenti
+        Renderer renderer = parent.GetComponent<Renderer>();
+        Collider collider = parent.GetComponent<Collider>();
+
+        if (renderer != null)
+            renderer.enabled = enable;
+
+        if (collider != null)
+            collider.enabled = enable;
+
+        // Richiama la funzione ricorsivamente per tutti i figli
+        for (int i = 0; i < parent.childCount; i++)
+        {
+            Transform child = parent.GetChild(i);
+            ToggleRenderersAndColliders(child, enable);
+        }
+    }
+}
+
+    e sostituisci la riga 595 con questo: ToggleRenderersAndColliders(HandsGraphics.gameObject.transform, false);
+    e scrivere sotto la riga 590 (ResetHandGraphics();)  questo: ToggleRenderersAndColliders(HandsGraphics.gameObject.transform, true);
+
+
+
+    Successivamente commentare anche la riga 1703 "ResetParent();"

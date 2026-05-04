@@ -1,0 +1,39 @@
+{
+    "name": "VirtualBarbershop",
+    "maps": [
+        {
+            "name": "Debug",
+            "id": "a1b2c3d4-0001-0001-0001-000000000001",
+            "actions": [
+                {
+                    "name": "NextDay",
+                    "type": "Button",
+                    "id": "a1b2c3d4-0001-0001-0001-000000000002",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a1b2c3d4-0001-0001-0001-000000000003",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NextDay",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Gameplay",
+            "id": "a1b2c3d4-0002-0002-0002-000000000001",
+            "actions": [],
+            "bindings": []
+        }
+    ],
+    "controlSchemes": []
+}

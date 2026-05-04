@@ -1,0 +1,95 @@
+# Unity recommended .gitattributes for Unity Projects
+# https://docs.unity3d.com/Manual/SmartMerge.html
+
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Unity YAML files - merge with UnityYAMLMerge
+*.unity merge=unityyamlmerge eol=lf
+*.prefab merge=unityyamlmerge eol=lf
+*.asset merge=unityyamlmerge eol=lf
+*.meta merge=unityyamlmerge eol=lf
+*.controller merge=unityyamlmerge eol=lf
+*.anim merge=unityyamlmerge eol=lf
+*.physicsMaterial2D merge=unityyamlmerge eol=lf
+*.physicsMaterial merge=unityyamlmerge eol=lf
+*.guiskin merge=unityyamlmerge eol=lf
+*.fontsettings merge=unityyamlmerge eol=lf
+*.renderTexture merge=unityyamlmerge eol=lf
+*.gradients merge=unityyamlmerge eol=lf
+*.flare merge=unityyamlmerge eol=lf
+*.brush merge=unityyamlmerge eol=lf
+*.shadergraph merge=unityyamlmerge eol=lf
+*.shadersubgraph merge=unityyamlmerge eol=lf
+*.signal merge=unityyamlmerge eol=lf
+*.spriteatlas merge=unityyamlmerge eol=lf
+
+# Unity binary files
+*.cubemap binary
+*.unitypackage binary
+
+# 3D models
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.obj filter=lfs diff=lfs merge=lfs -text
+*.max filter=lfs diff=lfs merge=lfs -text
+*.blend filter=lfs diff=lfs merge=lfs -text
+*.dae filter=lfs diff=lfs merge=lfs -text
+*.mb filter=lfs diff=lfs merge=lfs -text
+*.ma filter=lfs diff=lfs merge=lfs -text
+
+# Images
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.tga filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.tiff filter=lfs diff=lfs merge=lfs -text
+*.exr filter=lfs diff=lfs merge=lfs -text
+*.hdr filter=lfs diff=lfs merge=lfs -text
+*.dds filter=lfs diff=lfs merge=lfs -text
+
+# Audio
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.ogg filter=lfs diff=lfs merge=lfs -text
+*.aiff filter=lfs diff=lfs merge=lfs -text
+*.aif filter=lfs diff=lfs merge=lfs -text
+
+# Video (LFS come richiesto)
+*.mov filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+
+# Substance Painter
+*.spp filter=lfs diff=lfs merge=lfs -text
+
+# Android build (LFS come richiesto)
+*.apk filter=lfs diff=lfs merge=lfs -text
+
+# File specifici (LFS come richiesto)
+Cliente_5.fbx filter=lfs diff=lfs merge=lfs -text
+
+# Fonts
+*.ttf filter=lfs diff=lfs merge=lfs -text
+*.otf filter=lfs diff=lfs merge=lfs -text
+
+# Archives
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.7z filter=lfs diff=lfs merge=lfs -text
+*.gz filter=lfs diff=lfs merge=lfs -text
+
+# Shaders
+*.cginc text eol=lf
+*.shader text eol=lf
+*.compute text eol=lf
+
+# Scripts
+*.cs text eol=lf
+*.js text eol=lf
+*.boo text eol=lf
+*.json text eol=lf
+*.xml text eol=lf
+
+# Documentation
+*.md text eol=lf
+*.txt text eol=lf

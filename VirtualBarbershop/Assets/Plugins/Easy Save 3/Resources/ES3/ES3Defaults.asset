@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b340139c9e4d054f904d8b452798652, type: 3}
+  m_Name: ES3Defaults
+  m_EditorClassIdentifier: 
+  settings:
+    _location: 0
+    path: Game.es3
+    encryptionType: 0
+    compressionType: 0
+    encryptionPassword: password
+    directory: 0
+    format: 0
+    prettyPrint: 1
+    bufferSize: 0
+    saveChildren: 1
+    postprocessRawCachedData: 0
+    typeChecking: 1
+    safeReflection: 1
+    memberReferenceMode: 0
+    referenceMode: 2
+    serializationDepthLimit: 64
+    assemblyNames:
+    - Assembly-CSharp
+    - Assembly-CSharp-firstpass
+    - AssistantCoreSDKRuntime
+    - AssistantVoiceCommandCommon
+    - Autodesk.Fbx
+    - Autodesk.Fbx.BuildTestAssets
+    - Meta.Net.endel.nativewebsocket
+    - Meta.Voice.Hub.Runtime
+    - Meta.Voice.NLayer
+    - Meta.Voice.Opus
+    - Meta.VoiceSDK.Mic.Common
+    - Meta.VoiceSDK.Mic.Other
+    - Meta.VoiceSDK.Mic.WebGL
+    - Meta.Wit.Composer
+    - Meta.Wit.Dictation
+    - Meta.WitAi
+    - Meta.WitAi.Lib
+    - Meta.WitAi.TTS
+    - Meta.XR.Audio
+    - Meta.XR.BuildingBlocks
+    - Meta.XR.BuildingBlocks.AIBlocks
+    - Meta.XR.BuildingBlocks.DepthAPI
+    - Meta.XR.EnvironmentDepth
+    - Meta.XR.ImmersiveDebugger
+    - Meta.XR.ImmersiveDebugger.Interface
+    - meta.xr.mrutilitykit
+    - Meta.XR.MultiplayerBlocks.Shared
+    - Meta.XR.RuntimeOptimizer
+    - Meta.XR.RuntimeOptimizer.Core
+    - Oculus.Haptics
+    - Oculus.Interaction
+    - Oculus.Interaction.OVR
+    - Oculus.Interaction.OVR.Samples
+    - Oculus.Interaction.Samples
+    - Oculus.Interaction.UnityXR
+    - Oculus.Platform
+    - Oculus.VR
+    - VoiceSDK.Dictation.Runtime
+    - VoiceSDK.Runtime
+    - VoiceSDK.Runtime.Composer
+    - VoiceSDK.Telemetry.Runtime
+    showAdvancedSettings: 1
+  addMgrToSceneAutomatically: 0
+  autoUpdateReferences: 1
+  addAllPrefabsToManager: 1
+  collectDependenciesDepth: 4
+  logDebugInfo: 0
+  logWarnings: 0
+  logErrors: 1
